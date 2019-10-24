@@ -20,10 +20,13 @@ public class fox : MonoBehaviour    //類別 類別名稱
 
     private void Update()
     {
-        float horizontal = Input.GetAxis("Horizontal"); //A D 左右
-        transform.Translate(Vector3.right * horizontal * speed * Time.deltaTime);//A D 左右
-        Debug.Log(Input.GetAxis("Horizontal"));
-        r2d.AddForce(new Vector2(speed, 0));
+        if (Input.GetKeyDown(KeyCode.D)) transform.eulerAngles = new Vector3(0, 0, 0);
+        if (Input.GetKeyDown(KeyCode.A)) transform.eulerAngles = new Vector3(0, 180, 0);
+    }
+
+    private void FixedUpdate()
+    {
+        r2d.AddForce(new Vector2(speed * Input.GetAxis("Horizontal"),0));
     }
 
 
