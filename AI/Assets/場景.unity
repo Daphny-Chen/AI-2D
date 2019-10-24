@@ -125,6 +125,7 @@ GameObject:
   - component: {fileID: 255896922}
   - component: {fileID: 255896926}
   - component: {fileID: 255896925}
+  - component: {fileID: 255896927}
   m_Layer: 0
   m_Name: player-idle-1
   m_TagString: Untagged
@@ -244,6 +245,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &255896927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 255896921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b195ff9fe44564caaeb6c7135f4f96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  jump: 2.5
+  foxName: "\u72D0\u72F8"
+  pass: 0
 --- !u!1 &333456000
 GameObject:
   m_ObjectHideFlags: 0
@@ -546,6 +562,10 @@ MonoBehaviour:
   SayStart: "\u4F60\u597D\uFF0C\u8ACB\u5E6B\u6211\u627E\u523010\u500B\u6AFB\u6843\u3002"
   SayNotComplete: "\u4F60\u9084\u6C92\u627E\u523010\u500B\u6AFB\u6843\u3002"
   SayComplete: "\u54C7\uFF0C\u8B1D\u8B1D\u4F60\uFF0C\u9019\u88E1\u662F10\u500B\u6AFB\u6843\u5462\u3002"
+  Speed: 1.5
+  Complete: 0
+  CountPlayer: 0
+  CountFinish: 10
 --- !u!1 &1033248513
 GameObject:
   m_ObjectHideFlags: 0
