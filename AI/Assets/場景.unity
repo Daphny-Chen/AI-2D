@@ -127,7 +127,7 @@ GameObject:
   - component: {fileID: 255896925}
   - component: {fileID: 255896927}
   m_Layer: 0
-  m_Name: player-idle-1
+  m_Name: "\u72D0\u72F8"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -350,12 +350,12 @@ GameObject:
   - component: {fileID: 365918644}
   - component: {fileID: 365918643}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: "\u5C0D\u8A71\u6846"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &365918643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -560,7 +560,7 @@ GameObject:
   - component: {fileID: 993764679}
   - component: {fileID: 993764682}
   m_Layer: 0
-  m_Name: frog-idle-2
+  m_Name: "\u9752\u86D9"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
