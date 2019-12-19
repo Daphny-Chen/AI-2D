@@ -204,7 +204,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 255896921}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.03, y: -2.3256078, z: 0}
+  m_LocalPosition: {x: -1.03, y: -3.21, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -257,10 +257,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 150
-  jump: 100
+  jump: 1000
   foxName: "\u72D0\u72F8"
   pass: 0
   isGround: 1
+  onEat:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11500000, guid: 76451237acff11d4b8c40d71a3f36f88, type: 3}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  soundProp: {fileID: 0}
 --- !u!1001 &331830238
 Prefab:
   m_ObjectHideFlags: 0
@@ -298,7 +315,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4853222033992476, guid: 46e33fdc9f903984f8e5c7e4dca1534a, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1497273732020318, guid: 46e33fdc9f903984f8e5c7e4dca1534a, type: 2}
       propertyPath: m_Name
@@ -518,7 +535,7 @@ Transform:
   m_Children:
   - {fileID: 1033248514}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &961154509
 GameObject:
@@ -593,7 +610,7 @@ Transform:
   m_LocalScale: {x: 1.6709, y: 1.6709, z: 1.6709}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &962344122
 GameObject:
@@ -782,7 +799,7 @@ MonoBehaviour:
   sayStart: "\u55E8!!!\u6211\u8981\u8490\u96C6\u5341\u9846\u6AFB\u6843!!!"
   sayNotComplete: "\u9084\u6C92\u627E\u5230\u5341\u9846\u6AFB\u6843\u55CE!!!"
   sayComplete: "\u611F\u8B1D\u627E\u5230\u6AFB\u6843!!!"
-  speed: 10
+  speed: 500
   complete: 0
   countPlayer: 0
   countFinish: 10
@@ -1504,7 +1521,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4853222033992476, guid: 46e33fdc9f903984f8e5c7e4dca1534a, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1497273732020318, guid: 46e33fdc9f903984f8e5c7e4dca1534a, type: 2}
       propertyPath: m_Name
@@ -1550,7 +1567,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4853222033992476, guid: 46e33fdc9f903984f8e5c7e4dca1534a, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46e33fdc9f903984f8e5c7e4dca1534a, type: 2}
@@ -1592,7 +1609,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4853222033992476, guid: 46e33fdc9f903984f8e5c7e4dca1534a, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1497273732020318, guid: 46e33fdc9f903984f8e5c7e4dca1534a, type: 2}
       propertyPath: m_Name
@@ -1743,7 +1760,7 @@ Transform:
   m_LocalScale: {x: 5.1471, y: 5.1471, z: 5.1471}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1860697477
 GameObject:
@@ -1844,7 +1861,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4853222033992476, guid: 46e33fdc9f903984f8e5c7e4dca1534a, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1497273732020318, guid: 46e33fdc9f903984f8e5c7e4dca1534a, type: 2}
       propertyPath: m_Name

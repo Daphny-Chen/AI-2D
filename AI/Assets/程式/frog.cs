@@ -21,7 +21,7 @@ public class Frog : MonoBehaviour
     public string sayNotComplete = "還沒找到十顆櫻桃嗎!!!";
     public string sayComplete = "感謝找到櫻桃!!!";
     [Header("對話速度")]
-    public float speed = 1.5f;
+    public float speed = 500f;
     [Header("任務相關")]
     public bool complete;
     public int countPlayer;
@@ -100,5 +100,12 @@ public class Frog : MonoBehaviour
     private void SayClose()
     {
         objCanvas.SetActive(false);
+    }
+    /// <summary>
+    /// 玩家取得道具
+    /// </summary>
+    public void PlayerGet()
+    {
+        countPlayer++;
     }
 }
