@@ -256,25 +256,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b195ff9fe44564caaeb6c7135f4f96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 150
+  speed: 50
   jump: 1000
   foxName: "\u72D0\u72F8"
   pass: 0
-  isGround: 1
+  isGround: 0
   onEat:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11500000, guid: 76451237acff11d4b8c40d71a3f36f88, type: 3}
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   soundProp: {fileID: 0}
@@ -803,9 +792,9 @@ MonoBehaviour:
   complete: 0
   countPlayer: 0
   countFinish: 10
-  objCanvas: {fileID: 365918642}
-  textSay: {fileID: 962344124}
-  soundSay: {fileID: 8300000, guid: 858e42f4f505cd24ba91b4cae2d61418, type: 3}
+  objCanvas: {fileID: 0}
+  textSay: {fileID: 0}
+  soundSay: {fileID: 0}
 --- !u!70 &993764683
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
